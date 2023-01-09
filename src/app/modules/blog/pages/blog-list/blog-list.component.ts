@@ -9,8 +9,12 @@ import { Component, Input } from '@angular/core';
 })
 export class BlogListComponent {
   
-  num = 1
+  num = 2
   numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  width = '100px'
+  height = '100px'
+  color = 'yellow'
 
   @Input() passedBlog: Blog | undefined
 
@@ -30,7 +34,7 @@ export class BlogListComponent {
     {
       title: 'Blog 3', 
       description: 'My Blog 3',
-      published: true,
+      published: false,
       authorActive: true
     }
   ]
@@ -50,5 +54,11 @@ export class BlogListComponent {
 
   incrementNum = () => {
     this.num++
+  }
+
+  changeCSS = () => {
+    this.width = '200px'
+    this.height = '200px'
+    this.color = 'blue'
   }
 }

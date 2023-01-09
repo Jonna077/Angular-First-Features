@@ -35,10 +35,31 @@
 </div>
 <button (click)="incrementNum()">Increment Num</button> -->
 
-<div [ngSwitch]="num">
+<!-- <div [ngSwitch]="num">
     <ng-container *ngFor="let data of numArray">
         <div *ngSwitchCase="data">{{data}}</div>
     </ng-container>
     <div *ngSwitchDefault>None</div>
 </div>
-<button (click)="incrementNum()">Increment Num</button>
+<button (click)="incrementNum()">Increment Num</button> -->
+
+<!-- <div [ngStyle]="{'width': '100px', 'height': '100px', 'background-color': 'red'}">
+    Sample Div
+</div> -->
+
+<!-- <div [ngStyle]="{'width': width, 'height': height, 'background-color': color}">
+    Sample Div
+</div>
+<button (click)="changeCSS()">Change CSS</button> -->
+
+<!-- <div *ngFor="let data of blogs">
+    <div [ngClass]="{'card': data.authorActive, 'card2': data.published}">
+        <app-blog-item [blog]="data"></app-blog-item>
+    </div>
+</div> -->
+
+<!-- <div *ngFor="let data of blogs">
+    <div [ngClass]="{'card': num == 1}">
+        <app-blog-item [blog]="data"></app-blog-item>
+    </div>
+</div> -->

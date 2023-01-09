@@ -21,3 +21,24 @@
 
 <!-- <app-blog-item>Sibling 1</app-blog-item>
 <app-blog-item>Sibling 1</app-blog-item> -->
+
+<!-- <div *ngFor="let data of blogs; let i = index">
+    <app-blog-item *ngIf="data.published && data.authorActive" (actionEmitter)="executeAction($event, i)" [blog]="data"></app-blog-item>
+</div> -->
+
+<!-- <div [ngSwitch]="num">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div>
+    <div *ngSwitchCase="4">Four</div>
+    <div *ngSwitchDefault>None</div>
+</div>
+<button (click)="incrementNum()">Increment Num</button> -->
+
+<div [ngSwitch]="num">
+    <ng-container *ngFor="let data of numArray">
+        <div *ngSwitchCase="data">{{data}}</div>
+    </ng-container>
+    <div *ngSwitchDefault>None</div>
+</div>
+<button (click)="incrementNum()">Increment Num</button>

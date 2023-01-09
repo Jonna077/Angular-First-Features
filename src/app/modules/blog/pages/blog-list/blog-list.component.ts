@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
 })
 export class BlogListComponent {
   
+  num = 1
+  numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
   @Input() passedBlog: Blog | undefined
 
   blogs: Blog[] = [
@@ -36,8 +39,16 @@ export class BlogListComponent {
   //   console.log(blog)
   // }
 
-  executeAction(blog: Blog) {
-    //console.log(blog)
-    // this.passedBlog = blog
+  // executeAction(blog: Blog) {
+  //   //console.log(blog)
+  //   // this.passedBlog = blog
+  // }
+
+  executeAction(blog: Blog, i:number) {
+    console.log(blog, i)
+  }
+
+  incrementNum = () => {
+    this.num++
   }
 }

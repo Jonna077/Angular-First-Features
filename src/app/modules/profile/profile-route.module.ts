@@ -9,9 +9,4 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class UserModule { 
-
-  // userModuleMethod = () => {
-  //   return 3*Math.PI
-  // }
-}
+export class ProfileRouteModule { }

@@ -1,4 +1,4 @@
-import { BlogListComponent } from './pages/blog-list/blog-list.component';
+import { BookListComponent } from './pages/book-list/book-list.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 const routes: Routes = [
   {
     path: '',
-    component: BlogListComponent
+    component: BookListComponent
   }
 ]
 
@@ -18,4 +18,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class BlogRoutingModule { }
+export class BookRouteModule { }

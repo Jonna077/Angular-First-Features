@@ -1,8 +1,8 @@
-import { BlogRoutingModule } from './blog-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogListComponent } from './pages/blog-list/blog-list.component';
-import { BlogItemComponent } from './components/blog-item/blog-item.component';
+import { BlogItemComponent } from './component/blog-item/blog-item.component';
+import { BlogRouteModule } from './blog-route.module';
 
 
 
@@ -13,14 +13,7 @@ import { BlogItemComponent } from './components/blog-item/blog-item.component';
   ],
   imports: [
     CommonModule,
-    BlogRoutingModule
+    BlogRouteModule
   ]
 })
-export class BlogModule { 
-
-  // blogFunction = () => {
-  //   let userModule = new UserModule()
-  //   userModule.userModuleMethod()
-  // }
-
-}
+export class BlogModule { }
